@@ -1,9 +1,9 @@
-<?php 
+<?php
 
-$page_title =isset($mod_msg['title']) ? $mod_msg['title']: 'PAGE NOT FOUND';
-$page_sub =isset($mod_msg['subtitle']) ? $mod_msg['subtitle']: 'The page you are looking for might have been removed had its name changed or is temporarily unavailable.';
-$server_error = isset($mod_msg['server_no']) ? $mod_msg['server_no']: '404';
-$js_code = isset($mod_msg['js']) ? $mod_msg['js']: '';
+$page_title =isset($mod_msg['title']) ? $mod_msg['title'] : 'PAGE NOT FOUND';
+$page_sub =isset($mod_msg['subtitle']) ? $mod_msg['subtitle'] : 'The page you are looking for might have been removed had its name changed or is temporarily unavailable.';
+$server_error = isset($mod_msg['server_no']) ? $mod_msg['server_no'] : '404';
+$js_code = isset($mod_msg['js']) ? $mod_msg['js'] : '';
 ?>
 
 <!DOCTYPE html>
