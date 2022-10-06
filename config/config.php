@@ -8,12 +8,14 @@ $base_url = base_url();
 define("BASE_URL", $base_url);
 
 // Page url
-function page_url(){
+function page_url()
+{
     return (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 }
 
 // base url function
-function base_url() {
+function base_url()
+{
     return (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/eam";
 }
 
