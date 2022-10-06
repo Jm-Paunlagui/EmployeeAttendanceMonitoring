@@ -28,8 +28,8 @@ RewriteRule ^ - [L,F]
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteCond %{REQUEST_FILENAME} \.(tmp|gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|png|php|html|css|js|pdf|woff|woff2|ttf|svg|eot)$	[NC]
-RewriteCond %{HTTP_REFERER} !^https?://lms.ccc.edu.ph.*$    [NC]
-RewriteCond %{HTTP_REFERER} !^http?://localhost/web_app/.*$ [NC]
+#RewriteCond %{HTTP_REFERER} !^https?://lms.ccc.edu.ph.*$    [NC]
+RewriteCond %{HTTP_REFERER} !^http?://localhost/eam/.*$ [NC]
 RewriteCond %{HTTP_REFERER} !google\.                         [NC]
 RewriteCond %{HTTP_REFERER} !yahoo\.                          [NC]
 RewriteRule \.(tmp|gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|png|php|html|css|js|pdf|woff|woff2|ttf|svg|eot)$ - [F,L]
