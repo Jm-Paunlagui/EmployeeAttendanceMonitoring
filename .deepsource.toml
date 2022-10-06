@@ -9,7 +9,7 @@ name = "php"
 enabled = true
 
   [analyzers.meta]
-  bootstrap_files = ["assets/"]
+  bootstrap_files = ["asset"]
 
 [[transformers]]
 name = "php-cs-fixer"
